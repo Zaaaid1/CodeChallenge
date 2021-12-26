@@ -34,12 +34,9 @@ console.log("After: " + JSON.stringify(testArr));
 ```javascript
 function nextInLine(arr, item) {
   // Your code here
-
-  var queue = arr.push(item);
-
-  var removeItem = arr.shift();
-
-  return removeItem;  // Change this line
+   arr.push(item);
+   return arr.shift();
+  // Change this line
 }
 
 // Test Setup
